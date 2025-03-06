@@ -1,0 +1,5 @@
+{"comelab":{"timestamp_begin":1741237755.614365277, "rt":3.23, "ut":1.03, "st":1.46}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1741237755.030872160}
+{"VCS_COMP_START_TIME": 1741237755.030872160}
+{"VCS_COMP_END_TIME": 1741237758.920901558}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -debug_all +lint=noVCDE +warn=all -timescale=1ns/1ps -nc ServoController_test"}

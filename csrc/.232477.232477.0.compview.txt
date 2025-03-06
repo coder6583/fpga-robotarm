@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1741238743.291159030, "rt":0.45, "ut":0.19, "st":0.14}}
+{"vcselab":{"timestamp_begin":1741238743.857837096, "rt":0.46, "ut":0.27, "st":0.13}}
+{"link":{"timestamp_begin":1741238744.404472695, "rt":0.32, "ut":0.14, "st":0.19}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1741238742.460029926}
+{"VCS_COMP_START_TIME": 1741238742.460029926}
+{"VCS_COMP_END_TIME": 1741238745.743360267}
+{"VCS_USER_OPTIONS": "-full64 -sverilog -debug_all +lint=noVCDE +warn=all -j64 -timescale=1ns/1ps +v2k -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/altera_primitives.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/220model.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/sgate.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/altera_mf.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/cyclonev_atoms.v -o simv servo_control.sv library.sv servo_control_test.sv multiplier_181836.v"}
+{"vcs1": {"peak_mem": 233127}}
+{"stitch_vcselab": {"peak_mem": 233182}}

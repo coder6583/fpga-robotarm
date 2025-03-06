@@ -1,0 +1,32 @@
+set ucliGUI::state
+set ucliGUI::state
+ucliCore::getToolPID
+synopsys::env hasTB
+trigger_hier_stack_context_switch 0
+synUtils::setDVEInitPhase 1
+synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/inter.vpd -locking
+synopsys::dump -autoflush on -fid VPD0
+set ::dve_fid VPD0
+synUtils::setDVEInitPhase 0
+ucliCore::getToolPID
+synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpHDUVBi
+synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.snarita.259249}
+synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.snarita.259249}
+config endofsim noexit
+config onfail enable all
+config syscaddplainmembers
+config syscaddsourcenames
+config syscaddstructtypes
+synopsys::listing -disable
+synopsys::dump -add {ServoController_test.dut_MG996R.controller.angle ServoController_test.dut_MG996R.controller.angle_mult ServoController_test.dut_MG996R.controller.clock ServoController_test.dut_MG996R.controller.cycles ServoController_test.dut_MG996R.controller.cycles_done ServoController_test.dut_MG996R.controller.cycles_en ServoController_test.dut_MG996R.controller.cycles_reset ServoController_test.dut_MG996R.controller.en ServoController_test.dut_MG996R.controller.mult_result ServoController_test.dut_MG996R.controller.on_us ServoController_test.dut_MG996R.controller.on_us_temp ServoController_test.dut_MG996R.controller.pwm ServoController_test.dut_MG996R.controller.reset ServoController_test.dut_MG996R.controller.us ServoController_test.dut_MG996R.controller.us_done ServoController_test.dut_MG996R.controller.us_en ServoController_test.dut_MG996R.controller.us_offset ServoController_test.dut_MG996R.controller.us_reset } -aggregates  -fid VPD0
+synopsys::run
+set ucliGUI::state
+set ucliGUI::state
+set synopsys::env(time) 41386135000
+set ucliGUI::state
+set ucliGUI::state
+if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+synopsys::finish
+set ucliGUI::state
+set ucliGUI::state
+ucli_exit

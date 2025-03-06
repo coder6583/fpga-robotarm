@@ -1,0 +1,47 @@
+01:09:59    16 -->                                                             [tcl] ucliGUI::connect -toolargs -ucligui -toolexe ./simv -pid 259249 -toolin /tmp/vcs_20250306060957_259247_snarita..stdin -toolout /tmp/vcs_20250306060957_259247_snarita..stdout  
+01:09:59    17 -->                                                                 [tcl] set ucliGUI::state
+01:10:00    18 -->                                                                     [tcl] set ucliGUI::state
+01:10:00    19 -->                                                                         [tcl] ucliCore::getToolPID
+01:10:00    20 -->                                                                             [tcl] synopsys::env hasTB
+01:10:00    21 -->                                                                                 [tcl] trigger_hier_stack_context_switch 0
+01:10:00    22 -->                                                                                     [tcl] synUtils::setDVEInitPhase 1
+01:10:00    23 -->                                                                                         [tcl] gui_get_env SIMSETUP::SIMVPD
+01:10:00    24 -->                                                                                             [tcl] synopsys::dump -type VPD -file /afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/inter.vpd -locking
+01:10:00    25 --> ...  [tcl] synopsys::dump -autoflush on -fid VPD0
+01:10:00    26 --> ...      [tcl] set ::dve_fid VPD0
+01:10:00    27 --> ...          [tcl] synUtils::setDVEInitPhase 0
+01:10:00    28 --> ...              [tcl] ucliCore::getToolPID
+01:10:00    29 --> ...                  [tcl] synUtils::sendTool -active _icl_setToolSocket /tmp/smlnpHDUVBi
+01:10:00    30 --> ...                      [tcl] synUtils::sendTool -active {_icl_start_rpc -version "T-2022.06_Full64" -sync_file /tmp/vcs_dve_rpc.snarita.259249}
+01:10:00    31 --> ...                          [tcl] synUtils::sendTool -active {_icl_createSharedMemory /tmp/vcs_dve_general.snarita.259249}
+01:10:01    32 --> ...                              [tcl] dveMisc::vbusExpand ServoController_test
+01:10:01    33 --> ...                                  [tcl] config endofsim noexit
+01:10:01    34 --> ...                                      [tcl] config onfail enable all
+01:10:01    35 --> ...                                          [tcl] config syscaddplainmembers
+01:10:01    36 --> ...                                              [tcl] config syscaddsourcenames
+01:10:01    37 --> ...                                                  [tcl] config syscaddstructtypes
+01:10:01    38 --> ...                                                      [tcl] synopsys::listing -disable
+01:10:03    39 --> ...                                                          [tcl] dveMisc::vbusExpand ServoController_test.dut_MG996R.controller
+01:10:07    40 --> ...                                                              [tcl] synopsys::dump -add {ServoController_test.dut_MG996R.controller.angle ServoController_test.dut_MG996R.controller.angle_mult ServoController_test.dut_MG996R.controller.clock ServoController_test.dut_MG996R.controller.cycles ServoController_test.dut_MG996R.controller.cycles_done ServoController_test.dut_MG996R.controller.cycles_en ServoController_test.dut_MG996R.controller.cycles_reset ServoController_test.dut_MG996R.controller.en ServoController_test.dut_MG996R.controller.mult_result ServoController_test.dut_MG996R.controller.on_us ServoController_test.dut_MG996R.controller.on_us_temp ServoController_test.dut_MG996R.controller.pwm ServoController_test.dut_MG996R.controller.reset ServoController_test.dut_MG996R.controller.us ServoController_test.dut_MG996R.controller.us_done ServoController_test.dut_MG996R.controller.us_en ServoController_test.dut_MG996R.controller.us_offset ServoController_test.dut_MG996R.controller.us_reset } -aggregates  -fid VPD0
+01:10:08    41 --> ...                                                                  [tcl] synopsys::run
+01:10:08    42 --> ...                                                                      [tcl] set ucliGUI::state
+01:10:08    43 --> ...                                                                          [tcl] gui_update_simulator_buttons
+01:10:08    44 --> ...                                                                              [tcl] set ucliGUI::state
+01:10:08    45 --> ...                                                                                  [tcl] gui_update_simulator_buttons
+01:10:11    46 --> ...                                                                                      [tcl] set synopsys::env(time) 41386135000
+01:10:12    47 --> ...                                                                                          [tcl] set ucliGUI::state
+01:10:12    48 --> ...                                                                                              [tcl] set ucliGUI::state
+01:10:12    49 --> ...                                                                                                  [tcl] catch {senv activeDomain} dveMisc::result 
+01:10:12    50 --> ...  [tcl] set dveMisc::result
+01:10:12    51 --> ...      [tcl] gui_update_simulator_buttons
+01:20:23    52 --> ...          [tcl] if [catch {gui_sim_terminate}] {gui_sim_terminate -kill}
+01:20:23    53 --> ...              [tcl] synopsys::finish
+01:20:23    54 --> ...                  [tcl] set ucliGUI::state
+01:20:23    55 --> ...                      [tcl] gui_update_simulator_buttons
+01:20:24    56 --> ...                          [tcl] set ucliGUI::state
+01:20:24    57 --> ...                              [tcl] catch {senv activeDomain} dveMisc::result 
+01:20:24    58 --> ...                                  [tcl] set dveMisc::result
+01:20:24    59 --> ...                                      [tcl] gui_update_simulator_buttons
+01:20:24    60 --> ...                                          [tcl] catch {senv activeDomain} dveMisc::result 
+01:20:24    61 --> ...                                              [tcl] set dveMisc::result
+01:20:24    62 --> ...                                                  [tcl] ucli_exit

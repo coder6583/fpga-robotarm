@@ -1,0 +1,15 @@
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Mar  6 01:09 2025
+VCD+ Writer T-2022.06_Full64 Copyright (c) 1991-2022 by Synopsys Inc.
+The file '/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/inter.vpd' was opened successfully.
+  1500 cycles for      0 degrees
+  2000 cycles for     60 degrees
+  2000 cycles for 262084 degrees
+$finish called from file "servo_control_test.sv", line 66.
+$finish at simulation time          49997545000
+Simulation complete, time is 49997545000 ps.
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 49997545000 ps
+CPU Time:      4.090 seconds;       Data structure size:   0.0Mb
+Thu Mar  6 01:20:23 2025

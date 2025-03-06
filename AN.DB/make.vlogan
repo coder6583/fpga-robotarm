@@ -1,0 +1,32 @@
+
+VLOGAN	= vlogan
+VLOGAN_OPT	= +warn=all -full64 -sverilog -timescale=1ns/1ps +v2k -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/altera_primitives.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/220model.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/sgate.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/altera_mf.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/cyclonev_atoms.v -full64
+
+all :		_VCSgd_5KzPLd_1.db \
+	_VCSgd_p4hK7b_1.db \
+	_VCSgd_cS4DGd_1.db \
+	_VCSgd_zRMzVc_1.db \
+	_VCSgd_OL8Fbd_1.db \
+
+
+
+_VCSgd_5KzPLd_1.db :	servo_control_test.sv 
+		${VLOGAN}  ${VLOGAN_OPT} servo_control_test.sv
+
+
+_VCSgd_p4hK7b_1.db :	servo_control.sv 
+		${VLOGAN}  ${VLOGAN_OPT} servo_control.sv
+
+
+_VCSgd_cS4DGd_1.db :	library.sv 
+		${VLOGAN}  ${VLOGAN_OPT} library.sv
+
+
+_VCSgd_zRMzVc_1.db :	multiplier_181836.v 
+		${VLOGAN}  ${VLOGAN_OPT} multiplier_181836.v
+
+
+_VCSgd_OL8Fbd_1.db :	/afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/220model.v 
+		${VLOGAN}  ${VLOGAN_OPT} /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/220model.v
+
+
