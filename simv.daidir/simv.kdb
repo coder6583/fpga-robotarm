@@ -9,7 +9,7 @@ UUM=TRUE
 KDB=FALSE
 USE_NOVAS_HOME=FALSE
 COSIM=FALSE
-TOP=ServoController_test 
+TOP=PosCalc_test 
 OPTION=-ssz -ssv -ssy 
 ELAB_OPTION=-ssz -ssv -ssy 
 

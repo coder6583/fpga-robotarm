@@ -5,16 +5,28 @@
         "module",
         1
     ],
-    "ServoController_test": [
-        "ServoController_test",
-        "JnGsv",
+    "PosCalc_test": [
+        "PosCalc_test",
+        "WZRpQ",
+        "module",
+        4
+    ],
+    "CORDIC_0000": [
+        "CORDIC_0000",
+        "T1Bhf",
         "module",
         2
+    ],
+    "MultQ117": [
+        "MultQ117",
+        "vbVyj",
+        "module",
+        6
     ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
-        3
+        5
     ]
 }

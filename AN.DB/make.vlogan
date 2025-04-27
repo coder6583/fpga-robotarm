@@ -2,16 +2,27 @@
 VLOGAN	= vlogan
 VLOGAN_OPT	= +warn=all -full64 -sverilog -timescale=1ns/1ps +v2k -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/altera_primitives.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/220model.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/sgate.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/altera_mf.v -v /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/cyclonev_atoms.v -full64
 
-all :		_VCSgd_5KzPLd_1.db \
+all :		_VCSgd_TkjArc_1.db \
+	_VCSgd_N5jGHc_1.db \
 	_VCSgd_p4hK7b_1.db \
 	_VCSgd_cS4DGd_1.db \
+	_VCSgd_JqZqqb_1.db \
+	_VCSgd_Cmo1Ac_1.db \
+	_VCSgd_ZovrEe_1.db \
+	_VCSgd_q31od_1.db \
+	_VCSgd_5KzPLd_1.db \
+	_VCSgd_o4IXQd_1.db \
 	_VCSgd_zRMzVc_1.db \
 	_VCSgd_OL8Fbd_1.db \
 
 
 
-_VCSgd_5KzPLd_1.db :	servo_control_test.sv 
-		${VLOGAN}  ${VLOGAN_OPT} servo_control_test.sv
+_VCSgd_TkjArc_1.db :	terms_calc_test.sv 
+		${VLOGAN}  ${VLOGAN_OPT} terms_calc_test.sv
+
+
+_VCSgd_N5jGHc_1.db :	cordic.sv 
+		${VLOGAN}  ${VLOGAN_OPT} cordic.sv
 
 
 _VCSgd_p4hK7b_1.db :	servo_control.sv 
@@ -20,6 +31,30 @@ _VCSgd_p4hK7b_1.db :	servo_control.sv
 
 _VCSgd_cS4DGd_1.db :	library.sv 
 		${VLOGAN}  ${VLOGAN_OPT} library.sv
+
+
+_VCSgd_JqZqqb_1.db :	pos_calc_test.sv 
+		${VLOGAN}  ${VLOGAN_OPT} pos_calc_test.sv
+
+
+_VCSgd_Cmo1Ac_1.db :	cordic_test.sv 
+		${VLOGAN}  ${VLOGAN_OPT} cordic_test.sv
+
+
+_VCSgd_ZovrEe_1.db :	pos_calculation.sv 
+		${VLOGAN}  ${VLOGAN_OPT} pos_calculation.sv
+
+
+_VCSgd_q31od_1.db :	jacobian.sv 
+		${VLOGAN}  ${VLOGAN_OPT} jacobian.sv
+
+
+_VCSgd_5KzPLd_1.db :	servo_control_test.sv 
+		${VLOGAN}  ${VLOGAN_OPT} servo_control_test.sv
+
+
+_VCSgd_o4IXQd_1.db :	terms_calculation.sv 
+		${VLOGAN}  ${VLOGAN_OPT} terms_calculation.sv
 
 
 _VCSgd_zRMzVc_1.db :	multiplier_181836.v 

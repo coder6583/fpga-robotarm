@@ -1,5 +1,6 @@
-/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/library.sv
+/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/cordic.sv
 /afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/multiplier_181836.v
-/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/servo_control.sv
-/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/servo_control_test.sv
+/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/pos_calc_test.sv
+/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/pos_calculation.sv
+/afs/andrew.cmu.edu/usr15/snarita/private/projects/fpga-robotarm/terms_calculation.sv
 /afs/ece/support/altera/release/16.1.2/quartus/eda/sim_lib/220model.v
